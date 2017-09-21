@@ -1,0 +1,14 @@
+.cache
+.eggs
+*.egg-info
+dist
+__pycache__
+build
+_build
+*.pyc
+.pydev*
+*~
+.project
+*.tmp
+*.log
+.tox
