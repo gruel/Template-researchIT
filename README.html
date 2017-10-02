@@ -144,6 +144,33 @@ We should notice that the Markdown syntax is more limited than the reStructuredT
 </div>
 <div class="section" id="how-to">
 <h2>How-To<a class="headerlink" href="#how-to" title="Permalink to this headline">¶</a></h2>
+<p>To create the documentation a Makefile is provided.
+Sphinx allowed to create the documentation in multiple format
+(html, pdf, epub…).
+There are also an option in the makefile to create a documentation
+used on <a class="reference external" href="https://pages.github.com/">pages on Github</a>.</p>
+<p>To use that possibility, adapt the <strong>GITHUBREPO</strong> variable
+in the Makefile to poing to the Github repository of the project.
+When this is done the option <em>gh-pages</em> in the Makefile will create
+a new directory on the same level than the documention directory with the suffix <em>-html</em></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">this can be change by defining the variabe <strong>GITHUBBUILDDIR</strong>
+in the Makefile file.</p>
+</div>
+<p>the option <em>gh-pages</em> will create the html documentation and upload it on the <em>gh-pages</em> on Github.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+</div>
+<p>To create an epub file:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">epub</span>
+</pre></div>
+</div>
+<p>To create a pdf file, the best option is to use:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">latexpdf</span>
+</pre></div>
+</div>
+<p>but that implied the installation and use of LaTeX.</p>
 </div>
 </div>
 
